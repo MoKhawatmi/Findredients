@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="des.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Findredients</h1>
+        </header>
+
+        <div class="search-header">
+            <label for="search">
+                <h3>Search for meals by ingredients here</h3>
+                <input type="text" name="search" id="search" placeholder="Enter ingredients here"><span><button onclick="search()" <i class="fa fa-search"></i></button></span></input>
+            </label>
+            <h5>You can enter more than one ingredient! <br/>
+                Seperate them by the dash (-) symbol!
+            </h5>
+        </div>
+
+        <div class="container">
+            <div id="res" class="results">
+
+            </div>
+        </div>
+        <script src="logic.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,156 @@
+body{
+    background: linear-gradient(90deg, rgba(180,255,120,1) 0%, rgba(255,196,118,1) 100%);
+    font-family: 'Philosopher',sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    background-color: honeydew;
+    border-bottom: 2px solid yellowgreen;
+    margin: 0 auto;
+    top: 0px;
+    z-index: 1000;
+}
+
+h1{
+    text-align: center;
+    color: lime;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px solid white;
+    box-shadow: 5px 5px gray;
+    transform: rotate(-10deg);
+    width:312px;
+    height: 231;
+    transition: ease-out 0.5s;
+}
+
+img:hover{
+    transform:scale(1.2);
+    transition:all 0.5s;
+}
+
+h2{
+    margin-top: 4px;
+    margin-left: 5px;
+    float: left;
+}
+
+h3{
+    color: lime;
+    margin-bottom: 1px;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+h5{
+    color: limegreen;
+}
+
+
+button{
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(180,255,120,1);
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input{
+    border-right: none;
+    width: 300px;
+    height: 50px;
+    font-size: large;
+    
+}
+
+.container{
+    width: 100%;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: repeat(2,550px);
+    grid-auto-flow: row;
+    justify-content: center;
+    row-gap: 15px;
+    
+}
+
+.search-header{
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20;
+    margin-top: 100px;
+}
+
+.imageItem{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(16,56,3,1) 0%, rgba(16,56,3,1) 0%, rgba(173,255,47,1) 100%);
+    padding: 8px;
+    justify-self: center;
+}
+
+
+.infoItem{
+    position: relative;
+    width: 100%;
+    justify-self: start;
+    border: 4px solid greenyellow ;
+    border-left: none;
+    padding-left: 10px;
+}
+
+.summary{
+   clear: both;
+   margin-left: 5px;
+   font-size: larger;
+}
+
+.summary:empty{
+    width: 90%;
+    height: 150px;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    animation: 1s infinite linear;
+    animation-name: load;
+}
+
+@keyframes load{
+  0% {
+  background-position: -30vw 0;
+}
+100% {
+  background-position: 60vw 0;
+}
+}
+
+.more{
+    position:absolute;
+    bottom:0;
+    right:0;
+    float: right;
+    margin: 10px;
+}
+
+a{
+    font-size: 20px;
+    color: green;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
